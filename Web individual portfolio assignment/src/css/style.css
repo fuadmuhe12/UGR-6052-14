@@ -33,8 +33,8 @@ body {
 
 .hamburger-menu {
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
-  position: fixed;
   display: grid;
+  position: absolute;
   gap: var(--hamburger-gap);
   width: max-content;
   position: absolute;
@@ -45,6 +45,7 @@ body {
 }
 
 .hamburger-menu:has(input:checked) {
+
   --foreground: rgb(129, 39, 39);
   --background: #333;
 }
