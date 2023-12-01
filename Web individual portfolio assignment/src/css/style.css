@@ -34,7 +34,6 @@ body {
 .hamburger-menu {
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
   display: grid;
-  position: absolute;
   gap: var(--hamburger-gap);
   width: max-content;
   position: absolute;
@@ -45,6 +44,7 @@ body {
 }
 
 .hamburger-menu:has(input:checked) {
+    position: fixed;
 
   --foreground: rgb(129, 39, 39);
   --background: #333;
@@ -855,11 +855,14 @@ body {
    
 }
 .proj-slide{
-    width: 5em;
+    width: 15em;
     display: grid;
     justify-self: space-around;
-    row-gap: 0.2em ;
     grid-template-columns:repeat(8,1fr);
+    column-gap: 1rem;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
 }
 .tab{
     margin-top: 5em;
