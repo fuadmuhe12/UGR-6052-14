@@ -4,52 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="this is about page of my portfolio">
+    <link rel="stylesheet" href="css/style.css">
     <title>About</title>
 </head>
-<body>
-    <header>
+<body class="about-body">
+    <header class="about-header header-body">
         <div>
-          <a href="index.html"><img src="./image/logo.png" alt="My Logo"></a>  
+          <a href="index.html"><img src="./image/logo.png" alt="My Logo" class=" logo-img"></a>  
         </div>
         <div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <img src="./image/icons/home.png" alt="Home Icon">
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html">
-                            <img src="./image/icons/about.png" alt="About Icon">
-                            <span>About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="service.html">
-                            <img src="./image/icons/service.png" alt="Service Icon">
-                            <span>Service</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            <img src="./image/icons/contact.png" alt="Contact Icon">
-                            <span>Contact</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">
-                            <img src="./image/icons/portfolio.png" alt="Portfolio Icon">
-                            <span>Portfolio</span>
-                        </a>
-                    </li>
-                </ul>
+            <label class="hamburger-menu"><input type="checkbox" ></label>
+            <nav class="sidebar">
+                <li>
+                    <a href="index.html">
+                        <img src="./image/icons/home.png" alt="Home Icon">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <img src="./image/icons/about.png" alt="About Icon">
+                        <span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="service.html">
+                        <img src="./image/icons/service.png" alt="Service Icon">
+                        <span>Service</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <img src="./image/icons/contact.png" alt="Contact Icon">
+                        <span>Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="portfolio.html">
+                        <img src="./image/icons/portfolio.png" alt="Portfolio Icon">
+                        <span>Portfolio</span>
+                    </a>
+                </li>
             </nav>
         </div>
     </header>
-    <main>
-        <article>
+    <main class="about-main">
+        <article class="about-main-article">
+            
             <h1>About Me</h1>
             <div>
                 <p>
@@ -63,52 +64,54 @@
                   modern technologies. I am currently working as a full time developer in google.
                 </p>
 
-                <iframe src="https://drive.google.com/file/d/1mzNdKf61VBvBmuqeG7dTeVq7Es9NCYYS/view?usp=drive_link" style="width:100%; height:500px;" frameborder="0"></iframe>
-                
+                <iframe src="https://onedrive.live.com/embed?resid=74CA84A518206237%211028&authkey=!ABtHShhix1tyI0k&em=2" class="iframe" frameborder="0" scrolling="no"></iframe>                
             </div>
-            <picture>
-                <img src="./image/about.jpg" alt="Fuad's Photo">
-            </picture>
-            <section>
-                <h2>skills</h2>
-                <p>
-                  Here are a few technologies I've been working with recently:
-                </p>
-                <div>
-                    <div>
-                        <img src="./image/icons/html.png" alt="HTML Icon">
-                        <p>HTML</p>
-                    </div>
-                    <div>
-                        <img src="./image/icons/css.png" alt="CSS Icon">
-                        <p>CSS</p>
-                    </div>
-                    <div>
-                        <img src="./image/icons/javascript.png" alt="JavaScript Icon">
-                        <p>JavaScript</p>
-                    </div>
-                    <div>
-                        <img src="./image/icons/java.png" alt="java Icon">
-                        <p>JAVA</p>
-                    </div>
-                    <div>
-                        <img src="./image/icons/python.png" alt="python Icon">
-                        <p>PYTHON</p>
-                    </div>
-                    <div>
-                        <img src="./image/icons/mysql.png" alt="mysql Icon">
-                        <p>MYSQL</p>
-                    </div>
-                    <div>
-                        <img src="./image/icons/mongodb.png" alt="mongodb Icon">
-                        <p>MONGODB</p>
-                    </div>  
-                </div>
-            </section>
         </article>
+        <picture class="img">
+            <img src="./image/hero.png" alt="Fuad's Photo" class="hero-img">
+        </picture>
+        
+
+        <section class="about-section">
+            <h2>skills</h2>
+            <p>
+                Here are a few technologies I've been working with recently:
+            </p>
+            <div class="about-container">
+                <div class="skill skill-1 ">
+                    <img src="./image/icons/html.png" alt="HTML Icon">
+                    <p>HTML</p>
+                </div>
+                <div class="skill skill-2">
+                    <img src="./image/icons/css.png" alt="CSS Icon">
+                    <p>CSS</p>
+                </div>
+                <div class="skill skill-3">
+                    <img src="./image/icons/javascript.png" alt="JavaScript Icon">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill skill-4">
+                    <img src="./image/icons/java.png" alt="java Icon">
+                    <p>JAVA</p>
+                </div>
+                <div class="skill skill-5">
+                    <img src="./image/icons/python.png" alt="python Icon">
+                    <p>PYTHON</p>
+                </div>
+                <div class="skill skill-6">
+                    <img src="./image/icons/mysql.png" alt="mysql Icon">
+                    <p>MYSQL</p>
+                </div>
+                <div class="skill skill-7">
+                    <img src="./image/icons/mongodb.png" alt="mongodb Icon">
+                    <p>MONGODB</p>
+                </div>  
+            </div>
+            <a href="portfolio.html" class="link-tab">See in action</a>
+        </section>
     </main>
     
-    <footer>
+    <footer class="home-footer about-footer">
         <section>
             <h3>Contact Info</h3>
             <address>
@@ -116,12 +119,12 @@
                 <p >Phone: <a href="tel:+251978060846">+251978060846</a></p>
             </address>
             <!--get in touch-->
-            <div>
-                <a href="contact.html">Get in Touch</a>
+            <div >
+                <a href="contact.html" class="link-tab">Get in Touch</a>
             </div>    
         </section>
         <!--social link-->
-        <div>
+        <div class="social">
             <a href="https://www.facebook.com/fuaad.muhammad.56" target="_blank">
                 <img src="./image/icons/facebook.png" alt="Facebook Icon - Visit my Facebook profile">
             </a>
