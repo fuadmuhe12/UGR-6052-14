@@ -4,182 +4,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="this is a portfolio home webpage of me">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-B7Kw5giFvTRFZpe2vJzcV4R6KbThiiZ4hZ7j0H2Q9b7Zl8hZOW3kiODIvShW3Yleeb+K2rFPe1n8NQDyEVdkuQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Home</title>
     
 </head>
 <!--end every class -->
-<body class="home-body">
-    <header class="header-body">
-        <div>
-          <a href="index.html"><img src="./image/logo.png" alt="My Logo" class=" logo-img"></a>  
-        </div>
-        <div>
-            <label class="hamburger-menu"><input type="checkbox" ></label>
-            <nav class="sidebar">
-                <li>
-                    <a href="index.html">
-                        <img src="./image/icons/home.png" alt="Home Icon">
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="about.html">
-                        <img src="./image/icons/about.png" alt="About Icon">
-                        <span>About</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="service.html">
-                        <img src="./image/icons/service.png" alt="Service Icon">
-                        <span>Service</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html">
-                        <img src="./image/icons/contact.png" alt="Contact Icon">
-                        <span>Contact</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="portfolio.html">
-                        <img src="./image/icons/portfolio.png" alt="Portfolio Icon">
-                        <span>Portfolio</span>
-                    </a>
-                </li>
-            </nav>
+<body class="body  ">
+
+    <header class=" ">
+        
+        <div class="navbar is-white has-shadow   "  role="navigation" aria-label="main navigation">
+            <a role="button" id="burger" class="navbar-burger " aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            <div class="navbar-brand has-shadow is-primary">
+                <a href="index.html"><img src="./image/logo.png" alt="My Logo" class="image is-by1" width="100px"></a>  
+            </div>
+                <nav class="navbar-menu is-primary" id="nav-links">
+                    <div class="navbar-end">
+                        <li class="navbar-item is-primary is-hovered ">
+                            <a href="index.html">
+                                <img src="./image/icons/home.png" alt="Home Icon">
+                                <span>Home</span>
+                            </a>
+                        </li  >
+                        <li class="navbar-item is-hovered">
+                            <a href="about.html">
+                                <img src="./image/icons/about.png" alt="About Icon">
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item is-hovered">
+                            <a href="service.html">
+                                <img src="./image/icons/service.png" alt="Service Icon">
+                                <span>Service</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item ">
+                            <a href="contact.html">
+                                <img src="./image/icons/contact.png" alt="Contact Icon">
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item ">
+                            <a href="portfolio.html">
+                                <img src="./image/icons/portfolio.png" alt="Portfolio Icon">
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                    </div>
+                </nav>
+            
         </div>
     </header>
     
     <main class="home-main">
-        <article >
-            <h1>Welcome! I'm Fuad</h1>
-            <h2>Your Dedicated Fullstack Developer</h2>
-            <div>
-                <p>
+        <article class="section">
+            <div class="container">
+              <h1 class="title is-size-1">Welcome! I'm Fuad</h1>
+              <h2 class="subtitle is-size-3">Your Dedicated Fullstack Developer</h2>
+              <div class="content">
+                <p class="is-size-5">
                   Hey there! I'm Fuad, a passionate fullstack developer with a love for crafting
                   digital experiences. Whether it's building robust backend solutions or creating
                   dynamic frontend interfaces, I thrive on turning ideas into reality.
                 </p>
-                
-            </div>
+              </div>
               
-            <!-- social midia icons-->
-           
-        </article>
-
-        <picture>
+              <!-- Add your social media icons here using Bulma classes -->
+              
+            </div>
+          </article>
+          
+          <figure class="image is-1by1 ">
             <img src="./image/hero.png" alt="Hero Image" class="hero-img">
-        </picture>
-        <div class="socio-about">
-            <div>
-                <a class="link-tab" href="about.html">Get to Know Me</a>
+          </figure>
+          
+          <div class="section">
+            <div class="container">
+                <div>
+                  <a class="button is-link" href="about.html">Get to Know Me</a>
+                </div>
+                <div class="social">
+                  <a href="https://www.facebook.com/fuaad.muhammad.56" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="https://www.instagram.com/fuad_muhe_" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/fuadmuhe/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/fuadmuhe12" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+              </div>
             </div>
-            <div class="social">
-                <a href="https://www.facebook.com/fuaad.muhammad.56" target="_blank">
-                    <img src="./image/icons/facebook.png" alt="Facebook Icon - Visit my Facebook profile">
-                </a>
-                <a href="https://www.instagram.com/fuad_muhe_" target="_blank">
-                    <img src="./image/icons/instagram.png" alt="Instagram Icon - Visit my Instagram profile">
-                </a>
-                <a href="https://www.linkedin.com/in/fuadmuhe/" target="_blank">
-                    <img src="./image/icons/linkedin.png" alt="Linkedin Icon - Visit my LinkedIn profile">
-                </a>
-                <a href="https://github.com/fuadmuhe12" target="_blank">
-                    <img src="./image/icons/github.png" alt="GitHub Icon - Visit my GitHub profile">
-                </a>
-            </div>
-        </div>
+          </div>
+          
+          
     </main>
-    <section class="home-section">
-        <h2> Explore a Glimpse of My Creative Ventures</h2>
-        <div class="slide-wraper">
-            <div class="sec-container slider">
-                <div class="item item1" id="slide1">
-                    <picture>
-                        <img src="image/projects/project_1.jpg" alt="image of project one">
-                    </picture>
-                    <section>
-                        <h3>project X</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </section>
+    <section class="section home-section">
+        <div class="container">
+          <h2 class="title is-size-3">Explore a Glimpse of My Creative Ventures</h2>
+          <div class="slide-wrapper ">
+            <div class="sec-container slider mySwiper ">
+              <div class="card item item1 mySlides" id="slide1">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="image/projects/project_1.jpg" alt="image of project one">
+                  </figure>
                 </div>
-                <div class="item item2" id="slide2">
-                    <picture>
-                        <img src="image/projects/project_2.jpg" alt="image of project two">
-                    </picture>
-                    <section>
-                        <h3>project X</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </section>
+                <div class="card-content">
+                  <h3 class="is-size-4">Project X</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
-                <div class="item item3" id="slide3">
-                    <picture>
-                        <img src="image/projects/project_3.jpg" alt="image of project three">
-                    </picture>
-                    <section>
-                        <h3>project X</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </section>
+              </div>
+              <div class="card item item2 mySlides" id="slide2">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="image/projects/project_2.jpg" alt="image of project two">
+                  </figure>
                 </div>
-                <div class="item item4" id="slide4">
-                    <picture>
-                        <img src="image/projects/project_4.jpg" alt="image of project four">
-                    </picture>
-                    <section>
-                        <h3>project X</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </section>
+                <div class="card-content">
+                  <h3 class="is-size-4">Project X</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
                 </div>
+              </div>
+              <div class="card item item3 mySlides" id="slide3">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="image/projects/project_3.jpg" alt="image of project three">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <h3 class="is-size-4">Project X</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="card item item4 mySlides" id="slide4">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="image/projects/project_4.jpg" alt="image of project four">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <h3 class="is-size-4">Project X</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="slider-nav">
+          </div>
+          <a class="prev " onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next " onclick="plusSlides(1)">&#10095;</a>
+          <div class="slider-nav">
             <a href="#slide1"></a>
             <a href="#slide2"></a>
             <a href="#slide3"></a>
             <a href="#slide4"></a>
+          </div>
+          <div class="home-section-link">
+            <a href="portfolio.html" class="button is-link">Explore More</a>
+          </div>
         </div>
+      </section>
+     
+      
+   
+      
 
-        <div class="home-section-link">
-            <!--explore more-->
-            <a href="portfolio.html" class="link-tab">Explore More</a>
-        </div>
-    </section>
-
-    <footer class="home-footer" >
-        <section>
+      <footer class="footer home-footer">
+        <div class="container">
+          <section class="footer-section">
             <h3>Contact Info</h3>
             <address>
-                <p>Email: <a href="mailto:fuaadmuhe12@gmail.com">fuaadmuhe12@gmail.com</a>  </p>
-                <p>Phone: <a href="tel:+251978060846">+251978060846</a></p>
+              <p>Email: <a href="mailto:fuaadmuhe12@gmail.com">fuaadmuhe12@gmail.com</a></p>
+              <p>Phone: <a href="tel:+251978060846">+251978060846</a></p>
             </address>
-            <!--get in touch-->
             <div>
-                <a href="contact.html" class="link-tab">Get in Touch</a>
-            </div>    
-        </section>
-        <!--social link-->
-        <div class="social">
+              <a href="contact.html" class="button is-link">Get in Touch</a>
+            </div>
+          </section>
+      
+          <div class="footer-social">
             <a href="https://www.facebook.com/fuaad.muhammad.56" target="_blank">
-                <img src="./image/icons/facebook.png" alt="Facebook Icon - Visit my Facebook profile">
+              <i class="fab fa-facebook"></i>
             </a>
             <a href="https://www.instagram.com/fuad_muhe_" target="_blank">
-                <img src="./image/icons/instagram.png" alt="Instagram Icon - Visit my Instagram profile">
+              <i class="fab fa-instagram"></i>
             </a>
             <a href="https://www.linkedin.com/in/fuadmuhe/" target="_blank">
-                <img src="./image/icons/linkedin.png" alt="Linkedin Icon - Visit my LinkedIn profile">
+              <i class="fab fa-linkedin"></i>
             </a>
             <a href="https://github.com/fuadmuhe12" target="_blank">
-                <img src="./image/icons/github.png" alt="GitHub Icon - Visit my GitHub profile">
+              <i class="fab fa-github"></i>
             </a>
-
+          </div>
+      
+          <div class="footer-copyright">
+            <p>&copy; 2023 Made by Fuad Mohammed. All rights reserved.</p>
+          </div>
         </div>
-        <!--copy right-->
-        <div>
-            <p>&copy;  2023 Made by Fuad Mohammed. All rights reserved.</p>
-        </div>
-    </footer>
+      </footer>
+      
+    <script src="js/javascript.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
 </body>
 </html>
