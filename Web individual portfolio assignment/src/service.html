@@ -4,123 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="this a page where the service i give put here">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
     <title>Service</title>
 </head>
 <body class="ser-body">
-    <header class="ser-header header-body">
-        <div>
-          <a href="index.html"><img src="./image/logo.png" alt="My Logo" class=" logo-img"></a>  
-        </div>
-        <div>
-            <label class="hamburger-menu"><input type="checkbox" ></label>
-            <nav class="sidebar">
-                <li>
-                    <a href="index.html">
-                        <img src="./image/icons/home.png" alt="Home Icon">
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="about.html">
-                        <img src="./image/icons/about.png" alt="About Icon">
-                        <span>About</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="service.html">
-                        <img src="./image/icons/service.png" alt="Service Icon">
-                        <span>Service</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html">
-                        <img src="./image/icons/contact.png" alt="Contact Icon">
-                        <span>Contact</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="portfolio.html">
-                        <img src="./image/icons/portfolio.png" alt="Portfolio Icon">
-                        <span>Portfolio</span>
-                    </a>
-                </li>
-            </nav>
+    <header class=" ">
+        
+        <div class="navbar is-white has-shadow   "  role="navigation" aria-label="main navigation">
+            <a role="button" id="burger" class="navbar-burger " aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            <div class="navbar-brand has-shadow is-primary">
+                <a href="index.html"><img src="./image/logo.png" alt="My Logo" class="image is-by1" width="100px"></a>  
+            </div>
+                <nav class="navbar-menu is-primary" id="nav-links">
+                    <div class="navbar-end">
+                        <li class="navbar-item is-primary is-hovered ">
+                            <a href="index.html">
+                                <img src="./image/icons/home.png" alt="Home Icon">
+                                <span>Home</span>
+                            </a>
+                        </li  >
+                        <li class="navbar-item is-hovered">
+                            <a href="about.html">
+                                <img src="./image/icons/about.png" alt="About Icon">
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item is-hovered">
+                            <a href="service.html">
+                                <img src="./image/icons/service.png" alt="Service Icon">
+                                <span>Service</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item ">
+                            <a href="contact.html">
+                                <img src="./image/icons/contact.png" alt="Contact Icon">
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item ">
+                            <a href="portfolio.html">
+                                <img src="./image/icons/portfolio.png" alt="Portfolio Icon">
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                    </div>
+                </nav>
+            
         </div>
     </header>
     <main class="ser-main">
-        <h1>Services I Provide</h1>
-        <div class="ser_container">
-            <div class="item ser-item one">
-                <img src="./image/projects/web_dev.jpg" alt="Web Development Icon">
-                <h2>Web Development</h2>
-                <p>
-                    Elevate your online presence with bespoke web solutions. From dynamic websites to intuitive Chrome extensions, I leverage the power of JavaScript, React, HTML, CSS, Node.js, and MongoDB to create immersive digital experiences tailored to your needs.
-                </p>
-                <div>
-                    <a href="#" class="link-tab">Explore More</a>
+        <h1 class="title is-1 has-text-centered">Services I Provide</h1>
+        <div class="ser_container columns is-multiline is-flex-desktop ">
+            <div class="column is-half-tablet is-4" >
+                <div class="item ser-item one box m-3 ">
+                    <img src="./image/projects/web_dev.jpg" alt="Web Development Icon">
+                    <h2>Web Development</h2>
+                    <p>
+                        Elevate your online presence with bespoke web solutions. From dynamic websites to intuitive Chrome extensions, I leverage the power of JavaScript, React, HTML, CSS, Node.js, and MongoDB to create immersive digital experiences tailored to your needs.
+                    </p>
+                    <div class="has-text-centered m-3">
+                        <a href="#" class="button is-link ml-0 mr-auto">Explore More</a>
+                    </div>
                 </div>
             </div>
-            <div class="item ser-item two">
-                <img src="./image/projects/mobile_dev.jpeg" alt="Mobile Development Icon">
-                <h2>Mobile Development</h2>
-                <p>
-                    Transform your ideas into seamless mobile applications that captivate users. Using cutting-edge technologies such as Android, React Native, and Flutter, I design and develop mobile solutions that deliver functionality and style, ensuring an exceptional user journey on every device.
-                </p>
-                <div>
-                    <a href="#" class="link-tab">Discover More</a>
-                </div>
+            <div class="column is-half-tablet is-4">
+
+                <div class="item ser-item two box m-3">
+                    <img src="./image/projects/mobile_dev.jpeg" alt="Mobile Development Icon">
+                    <h2>Mobile Development</h2>
+                    <p>
+                        Transform your ideas into seamless mobile applications that captivate users. Using cutting-edge technologies such as Android, React Native, and Flutter, I design and develop mobile solutions that deliver functionality and style, ensuring an exceptional user journey on every device.
+                    </p>
+                    <div class="has-text-centered m-3">
+                        <a href="#" class="button is-link m-3">Discover More</a>
+                    </div>
+                </div>  
             </div>
-            <div class="item ser-item three">
-                <img src="./image/projects/backend_dev.jpg" alt="Backend Development Icon">
-                <h2>Backend Development</h2>
-                <p>
-                    Power your web applications with a robust backend foundation. I specialize in crafting scalable solutions using Node.js, Express, and MongoDB. By architecting efficient and secure backend systems, I ensure your applications run smoothly, handling data and user interactions seamlessly.
-                </p>
-                <div>
-                    <a href="#" class="link-tab">Learn More</a>
+            <div class="column is-full-tablet is-4">
+
+                <div class="item ser-item three box m-3">
+                    <img src="./image/projects/backend_dev.jpg" alt="Backend Development Icon">
+                    <h2>Backend Development</h2>
+                    <p>
+                        Power your web applications with a robust backend foundation. I specialize in crafting scalable solutions using Node.js, Express, and MongoDB. By architecting efficient and secure backend systems, I ensure your applications run smoothly, handling data and user interactions seamlessly.
+                    </p>
+                    <div class="has-text-centered m-3">
+                        <a href="#" class="button is-link m-3">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <a href="contact.html" title="Get in Touch" class="link-tab ser-link">Let's Discuss Your Project</a>
+        <div class="has-text-centered m-3">
+            <a href="contact.html" title="Get in Touch" class="button is-link">Let's Discuss Your Project</a>
+        </div>
     </main>
     <!--
         promo_video video of projects 
     -->
-    <video src="./vidoes/promo_video.mp4" controls  autoplay loop muted></video>
+    <video src="./vidoes/promo_video.mp4" controls  autoplay loop muted class="p-6"></video>
 
-    <footer class="ser-footer home-footer">
+    <footer class="has-text-centered has-background-primary mt-5">
         <section>
             <h3>Contact Info</h3>
             <address>
-                <p>Email: <a href="mailto:fuaadmuhe12@gmail.com">fuaadmuhe12@gmail.com</a>  </p>
-                <p>Phone: <a href="tel:+251978060846">+251978060846</a></p>
+                <p >Email: <a href="mailto:fuaadmuhe12@gmail.com">fuaadmuhe12@gmail.com</a> </p>
+                <p >Phone: <a href="tel:+251978060846">+251978060846</a></p>
             </address>
             <!--get in touch-->
-            <div>
-                <a href="contact.html" class="link-tab">Get in Touch</a>
+            <div >
+                <a href="contact.html" class="button is-link m-4">Get in Touch</a>
             </div>    
         </section>
         <!--social link-->
-        <div class="social">
+        <div class=" has-text-centered   is-flex">
             <a href="https://www.facebook.com/fuaad.muhammad.56" target="_blank">
-                <img src="./image/icons/facebook.png" alt="Facebook Icon - Visit my Facebook profile">
+                <img src="./image/icons/facebook.png" alt="Facebook Icon - Visit my Facebook profile" class="image is-32x32 mr-3 ">
             </a>
             <a href="https://www.instagram.com/fuad_muhe_" target="_blank">
-                <img src="./image/icons/instagram.png" alt="Instagram Icon - Visit my Instagram profile">
+                <img src="./image/icons/instagram.png" alt="Instagram Icon - Visit my Instagram profile" class="image is-32x32 mr-3">
             </a>
             <a href="https://www.linkedin.com/in/fuadmuhe/" target="_blank">
-                <img src="./image/icons/linkedin.png" alt="Linkedin Icon - Visit my LinkedIn profile">
+                <img src="./image/icons/linkedin.png" alt="Linkedin Icon - Visit my LinkedIn profile" class="image is-32x32 mr-3">
             </a>
             <a href="https://github.com/fuadmuhe12" target="_blank">
-                <img src="./image/icons/github.png" alt="GitHub Icon - Visit my GitHub profile">
+                <img src="./image/icons/github.png" alt="GitHub Icon - Visit my GitHub profile" class="image is-32x32 mr-3">
             </a>
-
         </div>
         <!--copy right-->
         <div>
             <p>&copy;  2023 Made by Fuad Mohammed. All rights reserved.</p>
         </div>
     </footer>
+    <script src="js/javascript.js"></script>
+
 </body>
 </html>
