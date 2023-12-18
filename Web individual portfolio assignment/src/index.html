@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta name="description" content="this is a portfolio home webpage of me">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ez1mLDEH/LpW6MqV4tuj8EXFh+zgYFb9qAkoM6lqsJ5rF6vyaSnFvlMzF3J8U+A2" crossorigin="anonymous">
     <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     
 </head>
@@ -22,8 +24,8 @@
               </a>
             <div class="navbar-brand has-shadow is-primary">
                 <a href="index.html"><img src="./image/logo.png" alt="My Logo" class="image is-by1" width="100px"></a>  
-            </div>
-                <nav class="navbar-menu is-primary" id="nav-links">
+            </div >
+                <nav class="navbar-menu is-primary is-right" id="nav-links">
                     <div class="navbar-end">
                         <li class="navbar-item is-primary is-hovered ">
                             <a href="index.html">
@@ -61,10 +63,11 @@
         </div>
     </header>
     
-    <main class="home-main">
-        <article class="section">
+    <main class="home-main m-4">
+      <div class="columns is-desktop">
+        <article class="column is-half-desktop ">
             <div class="container">
-              <h1 class="title is-size-1">Welcome! I'm Fuad</h1>
+              <h1 class="title is-size-1 has-text-centered">Welcome! I'm Fuad</h1>
               <div class="has-text-centered">
                 <span class="subtitle is-size-3 has-text-grey">I am </span><h2 id="typing" class="is-size-3 has-text-primary"></h2>
               </div>
@@ -81,14 +84,15 @@
           </article>
           
           
-          <figure class="image is-size-1">
-            <img src="image/hero.png" alt=" hero image"class="image is-rounded ">
+          <figure class="image is-size-1 column is-half-desktop">
+            <img src="image/hero.png" alt=" hero image"class="image is-rounded " style="max-width: 50%; margin: 0 auto;">
           </figure>
+      </div>
           
           <div class="section">
             <div class="container">
-                <div>
-                  <a class="button is-link" href="about.html">Get to Know Me</a>
+                <div class="has-text-centered">
+                  <a class="button is-link is-outlined m-4" href="about.html">Get to Know Me</a>
                 </div>
                 <div class="social">
                   <a href="https://www.facebook.com/fuaad.muhammad.56" target="_blank">
@@ -103,21 +107,21 @@
                   <a href="https://github.com/fuadmuhe12" target="_blank">
                     <i class="fab fa-github"></i>
                   </a>
-              </div>
+                </div>
             </div>
           </div>
           
           
     </main>
     <section class="section home-section">
-        <div class="container">
+        <div class="container" style="max-width: 70%; margin: 0 auto;">
           <h2 class="title is-size-3">Explore a Glimpse of My Creative Ventures</h2>
           <div class="slide-wrapper ">
             <div class="sec-container slider mySwiper ">
               <div class="card item item1 mySlides has-text-centered" id="slide1">
                 <div class="card-image">
                   <figure class="image is-4by3">
-                    <img src="image/projects/project_1.jpg" alt="image of project one">
+                    <img src="image/projects/project_1.jpg" alt="image of project one" >
                   </figure>
                 </div>
                 <div class="card-content">
@@ -171,8 +175,8 @@
             <a href="#slide3"></a>
             <a href="#slide4"></a>
           </div>
-          <div class="home-section-link">
-            <a href="portfolio.html" class="button is-link">Explore More</a>
+          <div class="has-text-centered">
+            <a href="portfolio.html" class="button is-link is-outlined ">Explore More</a>
           </div>
         </div>
       </section>
@@ -212,10 +216,11 @@
       </div>
         <!--copy right-->
         <div>
-            <p>&copy;  2023 Made by Fuad Mohammed. All rights reserved.</p>
+            <p class="is-size-1-desktop is-size-4-tablet	">&copy;  2023 Made by Fuad Mohammed. All rights reserved.</p>
         </div>
     </footer>
     <!-- Place this script in the <head> or just before the closing </body> tag -->
-    <script src="js/javascript.js"></script>
+    <script src="js/javascript.js" ></script>
+    <script src="js/javas2.js"></script>
 </body>
 </html>
