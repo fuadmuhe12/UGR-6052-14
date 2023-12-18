@@ -201,7 +201,39 @@ body {
 }
 
 /*  main part of the home page */
+.article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
 
+  .welcome-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .typing-container {
+    text-align: center;
+  }
+
+  .oks {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #17416d; /* Set your desired color for "I am" */
+  }
+
+  #typing {
+    display: inline-block;
+    font-size: x-large;
+    border-right: 2px solid #007bff; /* Border for the typing effect */
+    padding-right: 5px; /* Adjust padding for the border */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+
+  .intro-text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
 .home-main{
     display: flex;
     flex-direction: column;
@@ -1067,7 +1099,7 @@ body {
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .home-main h2{
+    .home-main h2 , .oks, #typing{
         text-align: center;
         text-decoration: wavy;
         font-size: 5vw;
@@ -1362,7 +1394,7 @@ body {
     .home-main h1{
         font-size: 4em;
     }
-    .home-main h2{
+    .home-main h2, .oks, #typing{
         font-size: 3em;
     }
     .home-main p{

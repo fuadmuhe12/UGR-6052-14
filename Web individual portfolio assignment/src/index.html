@@ -12,6 +12,7 @@
 </head>
 <!--end every class -->
 <body class="home-body">
+    <div data-aos="fade-up">
     <header class="header-body">
         <div>
           <a href="index.html"><img src="./image/logo.png" alt="My Logo" class=" logo-img"></a>  
@@ -54,21 +55,19 @@
     </header>
     
     <main class="home-main">
-        <article >
-            <h1>Welcome! I'm Fuad</h1>
-            <h2>Your Dedicated Fullstack Developer</h2>
-            <div>
-                <p>
-                  Hey there! I'm Fuad, a passionate fullstack developer with a love for crafting
-                  digital experiences. Whether it's building robust backend solutions or creating
-                  dynamic frontend interfaces, I thrive on turning ideas into reality.
-                </p>
-                
+        <article class="article">
+            <h1 class="welcome-heading">Welcome! I'm Fuad</h1>
+            <div class="typing-container">
+              <span class="oks">I am </span><h2 id="typing"> </h2>
             </div>
-              
-            <!-- social midia icons-->
-           
-        </article>
+            <div>
+              <p class="intro-text">
+                Hey there! I'm Fuad, a passionate fullstack developer with a love for crafting
+                digital experiences. Whether it's building robust backend solutions or creating
+                dynamic frontend interfaces, I thrive on turning ideas into reality.
+              </p>
+            </div>
+          </article>
 
         <picture>
             <img src="./image/hero.png" alt="Hero Image" class="hero-img">
@@ -181,5 +180,13 @@
             <p>&copy;  2023 Made by Fuad Mohammed. All rights reserved.</p>
         </div>
     </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script src="JS/javascript.js">
+        
+      </script>
 </body>
 </html>
