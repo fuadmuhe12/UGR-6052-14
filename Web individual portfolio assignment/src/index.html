@@ -1,136 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="this is a portfolio home webpage of me">
-    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this is a portfolio home webpage of me" />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Home</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <!--end every class -->
-<body class="home-body">
-    <header class="header-body">
+
+<body class="font-[Poppins] bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
+    <header class="bg-white">
+
         <div>
-          <a href="index.html"><img src="./image/logo.png" alt="My Logo" class=" logo-img"></a>  
-        </div>
-        <div>
-            <label class="hamburger-menu"><input type="checkbox" ></label>
-            <nav class="sidebar">
-                <li>
-                    <a href="index.html">
-                        <img src="./image/icons/home.png" alt="Home Icon">
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="about.html">
-                        <img src="./image/icons/about.png" alt="About Icon">
-                        <span>About</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="service.html">
-                        <img src="./image/icons/service.png" alt="Service Icon">
-                        <span>Service</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html">
-                        <img src="./image/icons/contact.png" alt="Contact Icon">
-                        <span>Contact</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="portfolio.html">
-                        <img src="./image/icons/portfolio.png" alt="Portfolio Icon">
-                        <span>Portfolio</span>
-                    </a>
-                </li>
+            <nav class="flex justify-between items-center w-[92%]  mx-auto">
+                <div>
+                    <a href="index.html"><img src="./image/logo.png" alt="My Logo" class="w-20"
+                            class="w-16 cursor-pointer" /></a>
+                </div>
+                <div
+                    class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                        <li class="hover:text-gray-500">
+                            <a href="index.html" class="flex">
+                                <img src="./image/icons/home.png" alt="Home Icon" class="w-5 mr-2" />
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-gray-500">
+                            <a href="about.html" class="flex">
+                                <img src="./image/icons/about.png" alt="About Icon" class="w-5 mr-2" />
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-gray-500">
+                            <a href="service.html" class="flex">
+                                <img src="./image/icons/service.png" alt="Service Icon" class="w-5 mr-2" />
+                                <span>Service</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-gray-500">
+                            <a href="contact.html" class="flex">
+                                <img src="./image/icons/contact.png" alt="Contact Icon" class="w-5 mr-2" />
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-gray-500">
+                            <a href="portfolio.html" class="flex">
+                                <img src="./image/icons/portfolio.png" alt="Portfolio Icon" class="w-5 mr-2" />
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="flex items-center gap-6">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
             </nav>
         </div>
     </header>
-    
-    <main class="home-main">
-        <article >
-            <h1>Welcome! I'm Fuad</h1>
-            <h2>Your Dedicated Fullstack Developer</h2>
+
+    <main class=" flex flex-col md:flex-row ">
+        <article class="p-8 md:w-1/2 ">
+            <h1 class="text-4xl font-bold mb-4">Welcome! I'm Fuad</h1>
+            <h2 class="text-2xl font-semibold mb-4">
+                Your Dedicated Fullstack Developer
+            </h2>
             <div>
-                <p>
-                  Hey there! I'm Fuad, a passionate fullstack developer with a love for crafting
-                  digital experiences. Whether it's building robust backend solutions or creating
-                  dynamic frontend interfaces, I thrive on turning ideas into reality.
+                <p class="text-gray-900 text-">
+                    Hey there! I'm Fuad, a passionate fullstack developer with a love
+                    for crafting digital experiences. Whether it's building robust
+                    backend solutions or creating dynamic frontend interfaces, I thrive
+                    on turning ideas into reality.
                 </p>
-                
             </div>
-              
-            <!-- social midia icons-->
-           
         </article>
 
-        <picture>
-            <img src="./image/hero.png" alt="Hero Image" class="hero-img">
+        <picture class="flex justify-center md:w-1/2 p-4">
+            <img src="./image/hero.png" alt="Hero Image" class=" min-w-80: rounded-full" class="w-fit" />
         </picture>
-        <div class="socio-about">
-            <div>
+
+        <div class=" w-full  p-4">
+            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-fit mx-auto my-4">
                 <a class="link-tab" href="about.html">Get to Know Me</a>
             </div>
-            <div class="social">
+            <div class="flex justify-center">
                 <a href="https://www.facebook.com/fuaad.muhammad.56" target="_blank">
-                    <img src="./image/icons/facebook.png" alt="Facebook Icon - Visit my Facebook profile">
+                    <img src="./image/icons/facebook.png" alt="Facebook Icon -  Visit my Facebook profile"
+                        class="w-8 mx-2 my-2 hover:shadow-md rounded-1xl " />
                 </a>
                 <a href="https://www.instagram.com/fuad_muhe_" target="_blank">
-                    <img src="./image/icons/instagram.png" alt="Instagram Icon - Visit my Instagram profile">
+                    <img src="./image/icons/instagram.png" alt="Instagram Icon -  Visit my Instagram profile"
+                        class="w-8 mx-2 my-2 hover:shadow-md rounded-1xl " />
                 </a>
                 <a href="https://www.linkedin.com/in/fuadmuhe/" target="_blank">
-                    <img src="./image/icons/linkedin.png" alt="Linkedin Icon - Visit my LinkedIn profile">
+                    <img src="./image/icons/linkedin.png" alt="Linkedin Icon -  Visit my LinkedIn profile"
+                        class="w-8 mx-2 my-2 hover:shadow-md rounded-1xl " />
                 </a>
                 <a href="https://github.com/fuadmuhe12" target="_blank">
-                    <img src="./image/icons/github.png" alt="GitHub Icon - Visit my GitHub profile">
+                    <img src="./image/icons/github.png" alt="GitHub Icon -  Visit my GitHub profile"
+                        class="w-8 mx-2 my-2 hover:shadow-md rounded-1xl  " />
                 </a>
             </div>
         </div>
     </main>
     <section class="home-section">
-        <h2> Explore a Glimpse of My Creative Ventures</h2>
+        <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-800 mb-4  text-center">Explore a
+            Glimpse of My Creative Ventures</h2>
         <div class="slide-wraper">
-            <div class="sec-container slider">
-                <div class="item item1" id="slide1">
-                    <picture>
-                        <img src="image/projects/project_1.jpg" alt="image of project one">
+            <div class="container flex gap-3">
+                <div class=" w-fit my-4 rounded-3xl  bg-sky-200 mx-auto" id="slide1">
+                    <picture class="rounded-t-3xl">
+                        <img src="image/projects/project_1.jpg" alt="image of projectone"
+                            class=" w-80 mx-auto rounded-t-3xl " />
                     </picture>
                     <section>
-                        <h3>project X</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3
+                            class="text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-800 mb-3 text-center">
+                            project X</h3>
+                        <p class="text-lg text-center md:text-2xl ">Lorem ipsum dolor sit amet.</p>
                     </section>
                 </div>
-                <div class="item item2" id="slide2">
-                    <picture>
-                        <img src="image/projects/project_2.jpg" alt="image of project two">
+                <div class=" w-fit my-4 rounded-3xl  bg-sky-200 mx-auto" id="slide2">
+                    <picture class="rounded-t-3xl">
+                        <img src="image/projects/project_2.jpg" alt="image of project  two"
+                            class=" w-80 mx-auto rounded-t-3xl " />
                     </picture>
                     <section>
-                        <h3>project X</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3
+                            class="text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-800 mb-3 text-center">
+                            project X</h3>
+                        <p class="text-lg text-center md:text-2xl ">Lorem ipsum dolor sit amet.</p>
                     </section>
                 </div>
-                <div class="item item3" id="slide3">
-                    <picture>
-                        <img src="image/projects/project_3.jpg" alt="image of project three">
+                <div class="w-fit my-4 rounded-3xl  bg-sky-200 mx-auto" id="slide3">
+                    <picture class="rounded-t-3xl">
+                        <img src="image/projects/project_3.jpg" alt="image of project  three"
+                            class=" w-80 mx-auto rounded-t-3xl " />
                     </picture>
                     <section>
-                        <h3>project X</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3
+                            class="text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-800 mb-3 text-center">
+                            project X</h3>
+                        <p class="text-lg text-center md:text-2xl ">Lorem ipsum dolor sit amet.</p>
                     </section>
                 </div>
-                <div class="item item4" id="slide4">
-                    <picture>
-                        <img src="image/projects/project_4.jpg" alt="image of project four">
+                <div class="w-fit my-4 rounded-3xl  bg-sky-200 mx-auto" id="slide4">
+                    <picture class="rounded-t-3xl">
+                        <img src="image/projects/project_4.jpg" alt="image of project  four"
+                            class=" w-80 mx-auto rounded-t-3xl " />
                     </picture>
                     <section>
-                        <h3>project X</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h3
+                            class="text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-800 mb-3 text-center">
+                            project X</h3>
+                        <p class="text-lg text-center md:text-2xl ">Lorem ipsum dolor sit amet.</p>
                     </section>
                 </div>
             </div>
@@ -142,44 +175,53 @@
             <a href="#slide4"></a>
         </div>
 
-        <div class="home-section-link">
+        <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-fit mx-auto my-4">
             <!--explore more-->
-            <a href="portfolio.html" class="link-tab">Explore More</a>
+            <a href="portfolio.html" class="">Explore More</a>
         </div>
     </section>
 
-    <footer class="home-footer" >
+    <footer class="home-footer">
         <section>
-            <h3>Contact Info</h3>
-            <address>
-                <p>Email: <a href="mailto:fuaadmuhe12@gmail.com">fuaadmuhe12@gmail.com</a>  </p>
-                <p>Phone: <a href="tel:+251978060846">+251978060846</a></p>
+            <h3 class="text-4xl text-center font-semibold">Contact Info</h3>
+            <address class="text-center">
+                <p>
+                    <span class="text-xl">Email :</span> <a href="mailto:fuaadmuhe12@gmail.com "
+                        class="text-sky-500">fuaadmuhe12@gmail.com</a>
+                </p>
+                <p><span class="text-xl">Phone : </span><a href="tel:+251978060846"
+                        class="text-sky-500">+251978060846</a></p>
             </address>
             <!--get in touch-->
-            <div>
+            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-fit mx-auto my-4">
                 <a href="contact.html" class="link-tab">Get in Touch</a>
-            </div>    
+            </div>
         </section>
         <!--social link-->
-        <div class="social">
+        <div class="flex justify-center">
             <a href="https://www.facebook.com/fuaad.muhammad.56" target="_blank">
-                <img src="./image/icons/facebook.png" alt="Facebook Icon - Visit my Facebook profile">
+                <img src="./image/icons/facebook.png" alt="Facebook Icon -  Visit my Facebook profile"
+                    class="w-8 mx-2 my-2 hover:shadow-md rounded-1xl " />
             </a>
             <a href="https://www.instagram.com/fuad_muhe_" target="_blank">
-                <img src="./image/icons/instagram.png" alt="Instagram Icon - Visit my Instagram profile">
+                <img src="./image/icons/instagram.png" alt="Instagram Icon -  Visit my Instagram profile"
+                    class="w-8 mx-2 my-2 hover:shadow-md rounded-1xl " />
             </a>
             <a href="https://www.linkedin.com/in/fuadmuhe/" target="_blank">
-                <img src="./image/icons/linkedin.png" alt="Linkedin Icon - Visit my LinkedIn profile">
+                <img src="./image/icons/linkedin.png" alt="Linkedin Icon -  Visit my LinkedIn profile"
+                    class="w-8 mx-2 my-2 hover:shadow-md rounded-1xl " />
             </a>
             <a href="https://github.com/fuadmuhe12" target="_blank">
-                <img src="./image/icons/github.png" alt="GitHub Icon - Visit my GitHub profile">
+                <img src="./image/icons/github.png" alt="GitHub Icon -  Visit my GitHub profile"
+                    class="w-8 mx-2 my-2 hover:shadow-md rounded-1xl " />
             </a>
-
         </div>
         <!--copy right-->
-        <div>
-            <p>&copy;  2023 Made by Fuad Mohammed. All rights reserved.</p>
+        <div class="font-mono text-center md:text-xl">
+            <p>&copy; 2023 Made by Fuad Mohammed. All rights reserved.</p>
         </div>
     </footer>
+    <script src="JS/script.js"></script>
 </body>
+
 </html>
