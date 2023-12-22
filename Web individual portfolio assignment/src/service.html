@@ -4,123 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="this a page where the service i give put here">
-    <link rel="stylesheet" href="css/style.css">
     <title>Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="ser-body">
-    <header class="ser-header header-body">
+<body class="font-[Poppins] bg-gradient-to-r from-[#fbc2eb] to-[#a6c1ee] h-screen">
+    <header class="bg-white">
+
         <div>
-          <a href="index.html"><img src="./image/logo.png" alt="My Logo" class=" logo-img"></a>  
-        </div>
-        <div>
-            <label class="hamburger-menu"><input type="checkbox" ></label>
-            <nav class="sidebar">
-                <li>
-                    <a href="index.html">
-                        <img src="./image/icons/home.png" alt="Home Icon">
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="about.html">
-                        <img src="./image/icons/about.png" alt="About Icon">
-                        <span>About</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="service.html">
-                        <img src="./image/icons/service.png" alt="Service Icon">
-                        <span>Service</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html">
-                        <img src="./image/icons/contact.png" alt="Contact Icon">
-                        <span>Contact</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="portfolio.html">
-                        <img src="./image/icons/portfolio.png" alt="Portfolio Icon">
-                        <span>Portfolio</span>
-                    </a>
-                </li>
+            <nav class="flex justify-between items-center w-[90%]  mx-auto">
+                <div>
+                    <a href="index.html"><img src="./image/logo.png" alt="My Logo" class="w-20"
+                            class="w-16 cursor-pointer border-2 hover:text-sky-100 bg-blue-600" /></a>
+                </div>
+                <div
+                    class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                    <ul class="flex font-semibold md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                        <li class="hover:text-gray-500">
+                            <a href="index.html" class="flex">
+                                <img src="./image/icons/home.png" alt="Home Icon" class="w-5 mr-2" />
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-gray-500">
+                            <a href="about.html" class="flex">
+                                <img src="./image/icons/about.png" alt="About Icon" class="w-5 mr-2" />
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-gray-500">
+                            <a href="service.html" class="flex">
+                                <img src="./image/icons/service.png" alt="Service Icon" class="w-5 mr-2" />
+                                <span>Service</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-gray-500">
+                            <a href="contact.html" class="flex">
+                                <img src="./image/icons/contact.png" alt="Contact Icon" class="w-5 mr-2" />
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li class="hover:text-gray-500">
+                            <a href="portfolio.html" class="flex">
+                                <img src="./image/icons/portfolio.png" alt="Portfolio Icon" class="w-5 mr-2" />
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="flex items-center gap-6">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                </div>
             </nav>
         </div>
     </header>
-    <main class="ser-main">
-        <h1>Services I Provide</h1>
-        <div class="ser_container">
-            <div class="item ser-item one">
-                <img src="./image/projects/web_dev.jpg" alt="Web Development Icon">
-                <h2>Web Development</h2>
-                <p>
+    <main class="">
+        <h1 class="text-4xl font-extrabold text-center my-4">Services I Provide</h1>
+
+        <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:justify-center gap-4 justify-items-center items-stretch">
+            <div class=" max-w-80   pb-4 bg-gradient-to-b rounded-3xl w-full ">
+                <img src="./image/projects/web_dev.jpg" alt="Web Development Icon" class=" w-full mx-auto rounded-t-3xl ">
+                <h2 class="text-2xl font-semibold text-center my-4">Web Development</h2>
+                <p class="text-md text-justify p-3 ">
                     Elevate your online presence with bespoke web solutions. From dynamic websites to intuitive Chrome extensions, I leverage the power of JavaScript, React, HTML, CSS, Node.js, and MongoDB to create immersive digital experiences tailored to your needs.
                 </p>
-                <div>
-                    <a href="#" class="link-tab">Explore More</a>
+                <div class="bg-blue-400 my-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl  w-fit mx-auto">
+                    <a href="#" >Explore More</a>
                 </div>
             </div>
-            <div class="item ser-item two">
-                <img src="./image/projects/mobile_dev.jpeg" alt="Mobile Development Icon">
-                <h2>Mobile Development</h2>
-                <p>
+            <div class=" max-w-80  mx-2 pb-4 bg-gradient-to-b rounded-3xl w-full ">
+                <img src="./image/projects/mobile_dev.jpeg" alt="Mobile Development Icon" class="w-full mx-auto rounded-t-3xl">
+                <h2 class="text-2xl font-semibold text-center my-4">Mobile Development</h2>
+                <p class="text-md text-justify p-3 ">
                     Transform your ideas into seamless mobile applications that captivate users. Using cutting-edge technologies such as Android, React Native, and Flutter, I design and develop mobile solutions that deliver functionality and style, ensuring an exceptional user journey on every device.
                 </p>
-                <div>
-                    <a href="#" class="link-tab">Discover More</a>
+                <div  class="bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl my-4 w-fit mx-auto">
+                    <a href="#">Discover More</a>
                 </div>
             </div>
-            <div class="item ser-item three">
-                <img src="./image/projects/backend_dev.jpg" alt="Backend Development Icon">
-                <h2>Backend Development</h2>
-                <p>
+            <div class=" max-w-80 mx-2 pb-4 bg-gradient-to-b rounded-3xl w-full md:col-span-2 md:justify-center lg:col-span-1 ">
+                <img src="./image/projects/backend_dev.jpg" alt="Backend Development Icon" class="w-full mx-auto rounded-t-3xl">
+                <h2 class="text-2xl font-semibold text-center my-4">Backend Development</h2>
+                <p class="text-md text-justify p-3 ">
                     Power your web applications with a robust backend foundation. I specialize in crafting scalable solutions using Node.js, Express, and MongoDB. By architecting efficient and secure backend systems, I ensure your applications run smoothly, handling data and user interactions seamlessly.
                 </p>
-                <div>
+                <div class="bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl my-4 w-fit mx-auto">
                     <a href="#" class="link-tab">Learn More</a>
                 </div>
             </div>
         </div>
-        <a href="contact.html" title="Get in Touch" class="link-tab ser-link">Let's Discuss Your Project</a>
+        <div class="bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl my-4 w-fit mx-auto">
+            <a href="contact.html" title="Get in Touch" class="link-tab ser-link">Let's Discuss Your Project</a>
+        </div>
     </main>
     <!--
         promo_video video of projects 
     -->
-    <video src="./vidoes/promo_video.mp4" controls  autoplay loop muted></video>
+    <video src="./vidoes/promo_video.mp4" controls  autoplay loop muted class="max-w-[80vw] mx-auto rounded-md my-8"></video>
 
-    <footer class="ser-footer home-footer">
+    <footer class=" bg-zinc-300 rounded-t-2xl mb-5">
         <section>
-            <h3>Contact Info</h3>
-            <address>
-                <p>Email: <a href="mailto:fuaadmuhe12@gmail.com">fuaadmuhe12@gmail.com</a>  </p>
-                <p>Phone: <a href="tel:+251978060846">+251978060846</a></p>
+            <h3 class="text-4xl text-center font-semibold">Contact Info</h3>
+            <address class="text-center">
+                <p>
+                    <span class="text-xl">Email :</span> <a href="mailto:fuaadmuhe12@gmail.com "
+                        class="text-sky-500">fuaadmuhe12@gmail.com</a>
+                </p>
+                <p><span class="text-xl">Phone : </span><a href="tel:+251978060846"
+                        class="text-sky-500">+251978060846</a></p>
             </address>
             <!--get in touch-->
-            <div>
+            <div class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-fit mx-auto my-4">
                 <a href="contact.html" class="link-tab">Get in Touch</a>
-            </div>    
+            </div>
         </section>
         <!--social link-->
-        <div class="social">
+        <div class="flex justify-center">
             <a href="https://www.facebook.com/fuaad.muhammad.56" target="_blank">
-                <img src="./image/icons/facebook.png" alt="Facebook Icon - Visit my Facebook profile">
+                <img src="./image/icons/facebook.png" alt="Facebook Icon -  Visit my Facebook profile"
+                    class="w-8 mx-2 my-2 hover:shadow-md rounded-1xl " />
             </a>
             <a href="https://www.instagram.com/fuad_muhe_" target="_blank">
-                <img src="./image/icons/instagram.png" alt="Instagram Icon - Visit my Instagram profile">
+                <img src="./image/icons/instagram.png" alt="Instagram Icon -  Visit my Instagram profile"
+                    class="w-8 mx-2 my-2 hover:shadow-md rounded-1xl " />
             </a>
             <a href="https://www.linkedin.com/in/fuadmuhe/" target="_blank">
-                <img src="./image/icons/linkedin.png" alt="Linkedin Icon - Visit my LinkedIn profile">
+                <img src="./image/icons/linkedin.png" alt="Linkedin Icon -  Visit my LinkedIn profile"
+                    class="w-8 mx-2 my-2 hover:shadow-md rounded-1xl " />
             </a>
             <a href="https://github.com/fuadmuhe12" target="_blank">
-                <img src="./image/icons/github.png" alt="GitHub Icon - Visit my GitHub profile">
+                <img src="./image/icons/github.png" alt="GitHub Icon -  Visit my GitHub profile"
+                    class="w-8 mx-2 my-2 hover:shadow-md rounded-1xl " />
             </a>
-
         </div>
         <!--copy right-->
-        <div>
-            <p>&copy;  2023 Made by Fuad Mohammed. All rights reserved.</p>
+        <div class="font-mono text-center md:text-xl">
+            <p>&copy; 2023 Made by Fuad Mohammed. All rights reserved.</p>
         </div>
     </footer>
+    <script src="JS/script.js"></script>
 </body>
 </html>
