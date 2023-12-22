@@ -23,11 +23,11 @@
             <nav class="flex justify-between items-center w-[92%]  mx-auto">
                 <div>
                     <a href="index.html"><img src="./image/logo.png" alt="My Logo" class="w-20"
-                            class="w-16 cursor-pointer" /></a>
+                            class="w-16 cursor-pointer border-2 hover:text-sky-100 bg-blue-600" /></a>
                 </div>
                 <div
                     class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <ul class="flex font-semibold md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                         <li class="hover:text-gray-500">
                             <a href="index.html" class="flex">
                                 <img src="./image/icons/home.png" alt="Home Icon" class="w-5 mr-2" />
@@ -72,12 +72,12 @@
     <main class=" flex flex-col  ">
         <div class="md:flex">
             <article class="p-8 md:w-1/2 md:mt-10 ">
-                <h1 class="text-4xl font-bold mb-4">Welcome! I'm Fuad</h1>
+                <h1 class="text-4xl font-extrabold mb-4">Welcome! <span class="text-slate-600">I'm Fuad</span></h1>
                 <h2 class="text-2xl font-semibold mb-4">
-                    Your Dedicated Fullstack Developer
+                    I am <span id="typing" class="text-slate-600 font-mono "></span>
                 </h2>
                 <div>
-                    <p class="text-gray-900 text-">
+                    <p class="text-gray-500 font-semibold text-justify">
                         Hey there! I'm Fuad, a passionate fullstack developer with a love
                         for crafting digital experiences. Whether it's building robust
                         backend solutions or creating dynamic frontend interfaces, I thrive
@@ -119,11 +119,11 @@
         <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-800 mb-4  text-center">Explore a
             Glimpse of My Creative Ventures</h2>
         <div class="slide-wraper">
-            <div class="container flex gap-3">
-                <div class=" w-fit my-4 rounded-3xl  bg-sky-200 mx-auto" id="slide1">
-                    <picture class="rounded-t-3xl">
+            <div class=" flex justify-center gap-3">
+                <div class="mySlides w-fit my-4 rounded-3xl max-w-96  bg-teal-200 mx-auto " id="slide1">
+                    <picture class="rounded-t-3xl w-full">
                         <img src="image/projects/project_1.jpg" alt="image of projectone"
-                            class=" w-80 mx-auto rounded-t-3xl " />
+                            class=" w-full mx-auto rounded-t-3xl " />
                     </picture>
                     <section>
                         <h3
@@ -132,10 +132,10 @@
                         <p class="text-lg text-center md:text-2xl ">Lorem ipsum dolor sit amet.</p>
                     </section>
                 </div>
-                <div class=" w-fit my-4 rounded-3xl  bg-sky-200 mx-auto" id="slide2">
+                <div class=" mySlides w-fit my-4 rounded-3xl max-w-96 bg-sky-200 mx-auto" id="slide2">
                     <picture class="rounded-t-3xl">
                         <img src="image/projects/project_2.jpg" alt="image of project  two"
-                            class=" w-80 mx-auto rounded-t-3xl " />
+                            class=" w-full mx-auto rounded-t-3xl " />
                     </picture>
                     <section>
                         <h3
@@ -144,10 +144,10 @@
                         <p class="text-lg text-center md:text-2xl ">Lorem ipsum dolor sit amet.</p>
                     </section>
                 </div>
-                <div class="w-fit my-4 rounded-3xl  bg-sky-200 mx-auto" id="slide3">
+                <div class="mySlides w-fit my-4 rounded-3xl max-w-96 bg-sky-200 mx-auto" id="slide3">
                     <picture class="rounded-t-3xl">
                         <img src="image/projects/project_3.jpg" alt="image of project  three"
-                            class=" w-80 mx-auto rounded-t-3xl " />
+                            class="w-full mx-auto rounded-t-3xl " />
                     </picture>
                     <section>
                         <h3
@@ -156,10 +156,10 @@
                         <p class="text-lg text-center md:text-2xl ">Lorem ipsum dolor sit amet.</p>
                     </section>
                 </div>
-                <div class="w-fit my-4 rounded-3xl  bg-sky-200 mx-auto" id="slide4">
+                <div class="mySlides w-fit my-4 rounded-3xl max-w-96 bg-sky-200 mx-auto" id="slide4">
                     <picture class="rounded-t-3xl">
                         <img src="image/projects/project_4.jpg" alt="image of project  four"
-                            class=" w-80 mx-auto rounded-t-3xl " />
+                            class=" w-full mx-auto rounded-t-3xl " />
                     </picture>
                     <section>
                         <h3
@@ -169,6 +169,11 @@
                     </section>
                 </div>
             </div>
+            <div class="text-4xl flex justify-center gap-8 ">
+                <a class="prev cursor-pointer  hover:text-sky-100 hover:bg-blue-600 rounded-lg " onclick="plusSlides(-1)">&#10094;</a>
+	            <a class="next cursor-pointer hover:text-sky-100 hover:bg-blue-600 rounded-lg " onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            
         </div>
         <div class="slider-nav">
             <a href="#slide1"></a>
@@ -181,9 +186,10 @@
             <!--explore more-->
             <a href="portfolio.html" class="">Explore More</a>
         </div>
+        
     </section>
 
-    <footer class=" bg-zinc-300">
+    <footer class=" bg-zinc-300 rounded-t-2xl mb-5">
         <section>
             <h3 class="text-4xl text-center font-semibold">Contact Info</h3>
             <address class="text-center">
@@ -224,6 +230,7 @@
         </div>
     </footer>
     <script src="JS/script.js"></script>
+    <script src="JS/javascript.js"></script>
+    <script src="JS/javas2.js"></script>
 </body>
-
 </html>
