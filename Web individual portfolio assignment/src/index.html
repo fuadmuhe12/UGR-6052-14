@@ -16,18 +16,21 @@ bootstap classes
 
 <body class="home-body">
     <header>
-        <nav class="navbar navbar-expand-md d-flex  justify-content-between  navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Fuad</a>
+        <nav class="navbar navbar-expand-md  text-center    justify-content-between  navbar-light">
+            <div class="container-fluid ">
+                <div class="d-inline-block me-md-5  ">
+                    <a class="navbar-brand" href="#">Fuad</a>
+                </div>
+                
                 <button class="navbar-toggler justify-content-end " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto my-auto ml-auto mr-3 mb-lg-0">
+                <div class="collapse navbar-collapse ms-md-5 link-offset-2-hover   " id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center  me-auto my-auto ms-md-5 ml-auto mr-3 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link active link-offset-2-hover" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./about.html">About</a>
@@ -47,13 +50,13 @@ bootstap classes
         </nav>
     </header>
 
-    <main class="home-main bg-light       ">
-        <article class="container mt-5">
-            <h1 class="display-4 text-center mb-4">Welcome! <span class="text-opacity-25 ">I'm Fuad</span></h1>
-            <h2 class="h4  mb-5">I am  <span class="typing"> </span></h2>
+    <main class=" p-3   bg-light     row  ">
+        <article class="col-12 col-md-6  mt-5 ">
+            <h1 class="display-4 text-center mb-4 mt-md-5  ">Welcome! <span class="text-opacity-25 ">I'm Fuad</span></h1>
+            <h2 class="h4 ps-3  mb-5">I am  <span id="typing"> </span></h2>
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <p class="lead text-justify">
+                <div class="">
+                    <p class="lead text-justify mt-md-3">
                         Hey there! I'm Fuad, a passionate fullstack developer with a love for crafting digital
                         experiences. Whether it's building robust backend solutions or creating dynamic frontend
                         interfaces, I thrive on turning ideas into reality.
@@ -63,13 +66,13 @@ bootstap classes
         </article>
 
 
-        <div class="container text-center mt-5">
+        <div class="col-12 col-md-6 text-center mt-2">
             <picture>
                 <img src="./image/hero.png" alt="Hero Image" class="img-fluid rounded-circle hero-img w- " />
             </picture>
         </div>
 
-        <div class="my-3 ">
+        <div class="col-12  col-md-12">
             <div class="text-center">
                 <div>
                     <a class=" btn btn-primary " href="about.html">Get to Know Me</a>
@@ -93,11 +96,11 @@ bootstap classes
 
         </div>
     </main>
-    <section class="home-section">
+    <section class=" bg-light   ">
         <h2 class="font-monospace  text-center   ">Explore a Glimpse of My Creative Ventures</h2>
         <div class="slide-wraper">
             <div class="sec-container slider container">
-                <div class="card w-50 my-3 mx-auto mySlides ">
+                <div class="card w-50 my-3 mx-auto mySlides bg-primary bg-opacity-25 shadow-lg rounded-5   ">
                     <img src="image/projects/project_1.jpg" class="card-img-top w-100" alt="Image of Project One">
                     <div class="card-body">
                         <h3 class="card-title text-center">Project X</h3>
@@ -105,7 +108,7 @@ bootstap classes
                     </div>
                 </div>
 
-                <div class="card w-50 my-3 mx-auto mySlides" id="slide2">
+                <div class="card w-50 my-3 mx-auto mySlides bg-primary bg-opacity-25 shadow-lg rounded-5  " id="slide2">
                     <picture>
                         <img src="image/projects/project_2.jpg" alt="image of project two" class="card-img-top w-100" />
                     </picture>
@@ -114,7 +117,7 @@ bootstap classes
                         <p class="card-text text-center ">Lorem ipsum dolor sit amet.</p>
                     </section>
                 </div>
-                <div class="card w-50 my-3 mx-auto mySlides" id="slide3">
+                <div class="card w-50 my-3 mx-auto mySlides bg-primary bg-opacity-25 shadow-lg rounded-5  " id="slide3">
                     <picture>
                         <img src="image/projects/project_3.jpg" alt="image of project three"
                             class="card-img-top w-100" />
@@ -124,7 +127,7 @@ bootstap classes
                         <p class="card-text text-center ">Lorem ipsum dolor sit amet.</p>
                     </section>
                 </div>
-                <div class="card w-50 my-3 mx-auto mySlides" id="slide4">
+                <div class="card w-50 my-3 mx-auto mySlides bg-primary bg-opacity-25 shadow-lg rounded-5  " id="slide4">
                     <picture>
                         <img src="image/projects/project_4.jpg" alt="image of project four"
                             class="card-img-top w-100" />
@@ -148,7 +151,7 @@ bootstap classes
         </div>
     </section>
 
-    <footer class="bg-opacity-50  bg-gradient bg-dark ">
+    <footer class="bg-opacity-50  bg-gradient bg-dark  ">
         <section>
             <div class="container mt-5">
                 <h3 class="text-center mb-4">Contact Info</h3>
@@ -164,7 +167,7 @@ bootstap classes
             </div>
         </section>
         <!--social link-->
-        <div class="d-flex my-1  justify-content-end    ">
+        <div class="d-flex my-4  justify-content-end text-center     ">
             <a href="https://www.facebook.com/fuaad.muhammad.56" target="_blank">
                 <img src="./image/icons/facebook.png" alt="Facebook Icon" class="w-25 h-auto m-4 my-0  " />
             </a>
@@ -184,6 +187,7 @@ bootstap classes
         </div>
     </footer>
     <script src="JS/script.js"></script>
+    <script src="JS/javas2.js"></script>
 </body>
 
 </html>
