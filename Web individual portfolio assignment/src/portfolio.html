@@ -1,331 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="this the portfolio page where I shows my previous projects">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <title>Portfolio</title>
 </head>
-<body class="port-body">
-    <header class="port-header header-body">
-        <div>
-          <a href="index.html"><img src="./image/logo.png" alt="My Logo" class=" logo-img"></a>  
-        </div>
-        <div>
-            <label class="hamburger-menu"><input type="checkbox" ></label>
-            <nav class="sidebar">
-                <li>
-                    <a href="index.html">
-                        <img src="./image/icons/home.png" alt="Home Icon">
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="about.html">
-                        <img src="./image/icons/about.png" alt="About Icon">
-                        <span>About</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="service.html">
-                        <img src="./image/icons/service.png" alt="Service Icon">
-                        <span>Service</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html">
-                        <img src="./image/icons/contact.png" alt="Contact Icon">
-                        <span>Contact</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="portfolio.html">
-                        <img src="./image/icons/portfolio.png" alt="Portfolio Icon">
-                        <span>Portfolio</span>
-                    </a>
-                </li>
-            </nav>
-        </div>
-    </header>
-    <main class="port-main">
-        <section>
-            <h1>My Projects</h1>
-            <div class="project-slider slider">
-                <!-- Project 1 -->
-                <article class="item project" id="s1">
-                    <figure>
-                        <img src="./image/projects/project_1.jpg" alt="Project Image">
-                        <figcaption>
-                            <h2 title="Wanderlust Blog">Wanderlust Blog</h2>
-                            <p>
-                                Explore my travel blog platform, where I share my adventures from around the globe.
-                                Join me on a journey through captivating stories and stunning visuals.
-                            </p>
-                            <a href="#" title="Take a look" class="link-tab">Take a look</a>
-                        </figcaption>
-                    </figure>
-                </article>
-    
-                <!-- Project 2 -->
-                <article class="item project" id="s2">
-                    <figure>
-                        <img src="./image/projects/project_2.jpg" alt="Project Image">
-                        <figcaption>
-                            <h2 title="FitHub">FitHub</h2>
-                            <p>
-                                FitHub is a fitness tracker app that helps you stay on top of your health goals.
-                                Log your workouts, track progress, and achieve your fitness milestones with this powerful tool.
-                            </p>
-                            <a href="#" title="Take a look" class="link-tab">Take a look</a>
-                        </figcaption>
-                    </figure>
-                </article>
-    
-                <!-- Project 3 -->
-                <article class="item project" id="s3">
-                    <figure>
-                        <img src="./image/projects/project_3.jpg" alt="Project Image">
-                        <figcaption>
-                            <h2 title="ShopEase">ShopEase</h2>
-                            <p>
-                                ShopEase is an e-commerce website offering a seamless shopping experience.
-                                Discover a variety of products, enjoy secure transactions, and have your favorite items delivered to your doorstep.
-                            </p>
-                            <a href="#" title="Take a look" class="link-tab">Take a look</a>
-                        </figcaption>
-                    </figure>
-                </article>
-    
-                <!-- Project 4 -->
-                <article class="item project" id="s4">
-                    <figure>
-                        <img src="./image/projects/project_4.jpg" alt="Project Image">
-                        <figcaption>
-                            <h2 title="Portify">Portify</h2>
-                            <p>
-                                Portify is a sleek and customizable portfolio website template.
-                                Showcase your skills, projects, and achievements with this modern and user-friendly design.
-                            </p>
-                            <a href="#" title="Take a look" class="link-tab">Take a look</a>
-                        </figcaption>
-                    </figure>
-                </article>
-                 <!-- Project 5 -->
-            <article class="item project" id="s5">
-                <figure>
-                    <img src="./image/projects/project_5.jpg" alt="Project Image">
-                    <figcaption>
-                        <h2 title="LingoQuest">LingoQuest</h2>
-                        <p>
-                            Embark on a language-learning journey with LingoQuest.
-                            This app provides interactive lessons, quizzes, and challenges to help you master a new language in an engaging way.
-                        </p>
-                        <a href="#" title="Take a look" class="link-tab">Take a look</a>
-                    </figcaption>
-                </figure>
-            </article>
 
-            <!-- Project 6 -->
-            <article class="item project" id="s6">
-                <figure>
-                    <img src="./image/projects/project_6.jpg" alt="Project Image">
-                    <figcaption>
-                        <h2 title="TechSavvy App">TechSavvy App</h2>
-                        <p>
+<body class=" ">
+    <header>
+        <nav class="navbar navbar-expand-md  text-center    justify-content-between  navbar-light">
+            <div class="container-fluid ">
+                <div class="d-inline-block me-md-5  ">
+                    <a class="navbar-brand" href="#">Fuad</a>
+                </div>
+
+                <button class="navbar-toggler justify-content-end " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-md-5 link-offset-2-hover   " id="navbarSupportedContent">
+                    <ul class=" navbar-nav text-center  me-auto my-auto ms-md-5 ml-auto mr-3 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active link-offset-2-hover" aria-current="page"
+                                href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./service.html">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./portfolio.html">portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-light ">
+        <section>
+            <h1 class="text-center ">My Projects</h1>
+            <div class="w-75  mx-auto mt-4">
+                <article class="card project mySlides shadow-lg  ">
+                    <img src="./image/projects/project_1.jpg" alt="Project Image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title" title="Wanderlust Blog">Wanderlust Blog</h5>
+                        <p class="card-text">
+                            Explore my travel blog platform, where I share my adventures from around the globe.
+                            Join me on a journey through captivating stories and stunning visuals.
+                        </p>
+                        <div class="text-center">
+                            <a href="#" title="Take a look" class="btn btn-primary">Take a look</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Project 2 -->
+                <article class="card project mySlides shadow-lg" id="s2">
+                    <img src="./image/projects/project_2.jpg" alt="Project Image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title" title="FitHub">FitHub</h5>
+                        <p class="card-text">
+                            FitHub is a fitness tracker app that helps you stay on top of your health goals.
+                            Log your workouts, track progress, and achieve your fitness milestones with this powerful
+                            tool.
+                        </p>
+                        <div class="text-center">
+                            <a href="#" title="Take a look" class="btn btn-primary">Take a look</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="card project mySlides shadow-lg" id="s3">
+                    <img src="./image/projects/project_3.jpg" alt="Project Image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title" title="ShopEase">ShopEase</h5>
+                        <p class="card-text">
+                            ShopEase is an e-commerce website offering a seamless shopping experience.
+                            Discover a variety of products, enjoy secure transactions, and have your favorite items
+                            delivered to your doorstep.
+                        </p>
+                        <div class="text-center">
+                            <a href="#" title="Take a look" class="btn btn-primary">Take a look</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="card project mySlides shadow-lg" id="s4">
+                    <img src="./image/projects/project_4.jpg" alt="Project Image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title" title="Portify">Portify</h5>
+                        <p class="card-text">
+                            Portify is a sleek and customizable portfolio website template.
+                            Showcase your skills, projects, and achievements with this modern and user-friendly design.
+                        </p>
+                        <div class="text-center">
+                            <a href="#" title="Take a look" class="btn btn-primary">Take a look</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Project 5 -->
+                <!-- Project 5 -->
+                <article class="card project mySlides shadow-lg" id="s5">
+                    <img src="./image/projects/project_5.jpg" alt="Project Image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title" title="LingoQuest">LingoQuest</h5>
+                        <p class="card-text">
+                            Embark on a language-learning journey with LingoQuest.
+                            This app provides interactive lessons, quizzes, and challenges to help you master a new
+                            language in an engaging way.
+                        </p>
+                        <div class="text-center">
+                            <a href="#" title="Take a look" class="btn btn-primary">Take a look</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="card project mySlides shadow-lg" id="s6">
+                    <img src="./image/projects/project_6.jpg" alt="Project Image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title" title="TechSavvy App">TechSavvy App</h5>
+                        <p class="card-text">
                             Dive into the world of technology with TechSavvy App.
                             Stay updated with the latest tech trends, reviews, and innovations.
                         </p>
-                        <a href="#" title="Take a look" class="link-tab">Take a look</a>
-                    </figcaption>
-                </figure>
-            </article>
+                        <div class="text-center">
+                            <a href="#" title="Take a look" class="btn btn-primary">Take a look</a>
+                        </div>
+                    </div>
+                </article>
 
-            <!-- Project 7 -->
-            <article class="item project" id="s7">
-                <figure>
-                    <img src="./image/projects/project_7.jpg" alt="Project Image">
-                    <figcaption>
-                        <h2 title="ArtGallery Website">ArtGallery Website</h2>
-                        <p>
+                <!-- Project 7 -->
+                <article class="card project mySlides shadow-lg" id="s7">
+                    <img src="./image/projects/project_7.jpg" alt="Project Image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title" title="ArtGallery Website">ArtGallery Website</h5>
+                        <p class="card-text">
                             Immerse yourself in the beauty of art with the ArtGallery Website.
-                            Discover exquisite artworks, learn about artists, and explore the diverse world of creativity.
+                            Discover exquisite artworks, learn about artists, and explore the diverse world of
+                            creativity.
                         </p>
-                        <a href="#" title="Take a look" class="link-tab">Take a look</a>
-                    </figcaption>
-                </figure>
-            </article>
+                        <div class="text-center">
+                            <a href="#" title="Take a look" class="btn btn-primary">Take a look</a>
+                        </div>
+                    </div>
+                </article>
 
-            <!-- Project 8 -->
-            <article class="item project" id="s8">
-                <figure>
-                    <img src="./image/projects/project_8.jpg" alt="Project Image">
-                    <figcaption>
-                        <h2 title="CodeCraft Platform">CodeCraft Platform</h2>
-                        <p>
+                <!-- Project 8 -->
+                <article class="card project mySlides shadow-lg" id="s8">
+                    <img src="./image/projects/project_8.jpg" alt="Project Image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title" title="CodeCraft Platform">CodeCraft Platform</h5>
+                        <p class="card-text">
                             CodeCraft Platform is where coding meets creativity.
-                            Unlock your programming potential, participate in coding challenges, and elevate your coding skills.
+                            Unlock your programming potential, participate in coding challenges, and elevate your coding
+                            skills.
                         </p>
-                        <a href="#" title="Take a look" class="link-tab">Take a look</a>
-                    </figcaption>
-                </figure>
-            </article>
-    
-
-    
+                        <div class="text-center">
+                            <a href="#" title="Take a look" class="btn btn-primary">Take a look</a>
+                        </div>
+                    </div>
+                </article>
+                <div class="d-flex justify-content-center my-4   ">
+                    <a class="prev btn btn-secondary mx-3  " onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next btn btn-secondary mx-3 " onclick="plusSlides(1)">&#10095;</a>
+                </div>
             </div>
-            <div class="slider-nav proj-slide">
-                <a href="#s1" class="dot"></a>
-                <a href="#s2" class="dot"></a>
-                <a href="#s3" class="dot"></a>
-                <a href="#s4" class="dot"></a>
-                <a href="#s5" class="dot"></a>
-                <a href="#s6" class="dot"></a>
-                <a href="#s7" class="dot"></a>
-                <a href="#s8" class="dot"></a>
+            <div class="text-center my-5 pb-2 ">
+                <a href="./contact.html" class="btn btn-primary ">Let's Bring Your Ideas to Life</a>
             </div>
-            <a href="./contact.html" class="link-tab tab">Let's Bring Your Ideas to Life</a>
-
         </section>
     </main>
 
-    <section class="port-section">
-        <h2>Testimonials</h2>
-        <div class="cont">
-            <figure class=" test">
-                <img src="./image/testimony/testimony_1.jpg" alt="Testimony Image">
-                <blockquote>
-                    &quot; Fuad's work is truly exceptional, delivering high-quality results with a keen attention to detail. &quot;
-                </blockquote>
-                <figcaption>
-                    <h3>Jane Smith</h3>
-                    <h4>CTO of Tech Innovations</h4>
-                </figcaption>
-            </figure>
-            
-            <figure class=" test">
-                <img src="./image/testimony/testimony_2.jpg" alt="Testimony Image">
-                <blockquote>
-                    &quot; Working with Fuad has been a game-changer for our projects. His expertise and dedication are unparalleled. &quot;
-                </blockquote>
-                <figcaption>
-                    <h3>Alex Johnson</h3>
-                    <h4>Founder of Creative Solutions</h4>
-                </figcaption>
-            </figure>
-            
-            <figure class=" test">
-                <img src="./image/testimony/testimony_3.jpg" alt="Testimony Image">
-                
-                <blockquote>
-                    Fuad's insights and solutions have transformed our approach. Hear directly from our CEO:
-                    <audio controls>
-                        <source src="./audio/testimony.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-                </blockquote>
-                <figcaption>
-                    <h3>Sara Rodriguez</h3>
-                    <h4>CEO of Digital Ventures</h4>
-                </figcaption>
-            </figure>
-            
-            <figure class=" test">
-                <img src="./image/testimony/testimony_4.jpg" alt="Testimony Image">
-                <blockquote>
-                    &quot; Fuad's commitment to excellence shines through in every project. A true asset to any team. &quot;
-                </blockquote>
-                <figcaption>
-                    <h3>Michael Turner</h3>
-                    <h4>CEO of Global Enterprises</h4>
-                </figcaption>
-            </figure>
+    <section class="p">
+        <h2 class="h1 text-center ">Testimonials</h2>
+        <div class="w-75 mx-auto    ">
+            <div class="card my-3  testimony-card  ">
+                <img src="./image/testimony/testimony_1.jpg" alt="Testimony Image" class="card-img-top ">
+                <div class="card-body">
+                    <blockquote class="card-text">
+                        "Fuad's work is truly exceptional, delivering high-quality results with a keen attention to
+                        detail."
+                    </blockquote>
+                </div>
+                <div class="card-footer text-center ">
+                    <h3 class="card-title">Jane Smith</h3>
+                    <h4 class="card-subtitle">CTO of Tech Innovations</h4>
+                </div>
+            </div>
+
+
+            <!-- Testimony 2 -->
+            <div class="card my-3  ">
+                <img src="./image/testimony/testimony_2.jpg" alt="Testimony Image" class="card-img-top">
+                <div class="card-body">
+                    <blockquote class="card-text">
+                        " Working with Fuad has been a game-changer for our projects. His expertise and dedication are
+                        unparalleled. "
+                    </blockquote>
+                </div>
+                <div class="card-footer text-center">
+                    <h3 class="card-title">Alex Johnson</h3>
+                    <h4 class="card-subtitle">Founder of Creative Solutions</h4>
+                </div>
+            </div>
+
+            <!-- Testimony 3 -->
+            <div class="card my-3  testimony">
+                <img src="./image/testimony/testimony_3.jpg" alt="Testimony Image" class="card-img-top">
+                <div class="card-body">
+                    <blockquote class="card-text">
+                        Fuad's insights and solutions have transformed our approach. Hear directly from our CEO:
+                        <audio controls class="mt-2 w-75 d-block mx-auto  " >
+                            <source src="./audio/testimony.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </blockquote>
+                </div>
+                <div class="card-footer text-center">
+                    <h3 class="card-title">Sara Rodriguez</h3>
+                    <h4 class="card-subtitle">CEO of Digital Ventures</h4>
+                </div>
+            </div>
+
+            <!-- Testimony 4 -->
+            <div class="card my-3  testimony">
+                <img src="./image/testimony/testimony_4.jpg" alt="Testimony Image" class="card-img-top">
+                <div class="card-body">
+                    <blockquote class="card-text">
+                        " Fuad's commitment to excellence shines through in every project. A true asset to any team. "
+                    </blockquote>
+                </div>
+                <div class="card-footer text-center">
+                    <h3 class="card-title">Michael Turner</h3>
+                    <h4 class="card-subtitle">CEO of Global Enterprises</h4>
+                </div>
+            </div>
+
         </div>
     </section>
-        
-        
-    
-   <aside class="port-aside" id="port-aside">
-        <!--im open for work contact me address -->
-        <div>
-            <h3>Additional information </h3>
-            <address>
-                <p >Email: <a href="mailto:fuaadmuhe12@gmail.com">fuaadmuhe12@gmail.com</a> </p>
-                <p >Phone: <a href="tel:+251978060846">+251978060846</a></p>
-            </address>
-            <!--get in touch on socail media-->
-            <div>
-                <h2>
-                    Contact me 
-                </h2>
-                <ul class="social">
-                    <li>
-                        <a href="https://www.facebook.com/fuaad.muhammad.56" target="_blank">
-                            <img src="./image/icons/facebook.png" alt="Facebook Icon - Visit my Facebook profile">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/fuad_muhe_" target="_blank">
-                            <img src="./image/icons/instagram.png" alt="Instagram Icon - Visit my Instagram profile">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/fuadmuhe/" target="_blank">
-                            <img src="./image/icons/linkedin.png" alt="Linkedin Icon - Visit my LinkedIn profile">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/fuadmuhe12" target="_blank">
-                            <img src="./image/icons/github.png" alt="GitHub Icon - Visit my GitHub profile">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <section class=" hoby">
-                <h3>My Hobies</h3>
-                <ul>
-                    <li>Reading</li>
-                    <li>Solving Porblems</li>
-                    <li>Watching Movies</li>
-                    <li>Playing Football</li>
-                    <li>Playing Video Games</li>
-                    <li>Coding</li>
-            </section>
-        </div>
-   </aside>
 
-    <footer class="port-footer home-footer">
-        <section>
-            <h3>Contact Info</h3>
+
+
+    <aside class="card mx-5 " id="port-aside">
+        <div class="text-center">
+            <h3 class="mb-4">Additional Information</h3>
             <address>
-                <p >Email: <a href="mailto:fuaadmuhe12@gmail.com">fuaadmuhe12@gmail.com</a> </p>
-                <p >Phone: <a href="tel:+251978060846">+251978060846</a></p>
+                <p>Email: <a href="mailto:fuaadmuhe12@gmail.com" class="link-info link-offset-2-hover">fuaadmuhe12@gmail.com</a></p>
+                <p>Phone: <a href="tel:+251978060846" class="link-info link-offset-2-hover">+251978060846</a></p>
             </address>
+        </div>
+    
+        <!-- Get in touch on social media -->
+        <div class="text-center">
+            <h2 class="mb-4">Contact Me</h2>
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="https://www.facebook.com/fuaad.muhammad.56" target="_blank" class="social-link mx-2">
+                    <img src="./image/icons/facebook.png" alt="Facebook Icon" class="w-25 h-auto" />
+                </a>
+                <a href="https://www.instagram.com/fuad_muhe_" target="_blank" class="social-link mx-2">
+                    <img src="./image/icons/instagram.png" alt="Instagram Icon" class="w-25 h-auto" />
+                </a>
+                <a href="https://www.linkedin.com/in/fuadmuhe/" target="_blank" class="social-link mx-2">
+                    <img src="./image/icons/linkedin.png" alt="LinkedIn Icon" class="w-25 h-auto" />
+                </a>
+                <a href="https://github.com/fuadmuhe12" target="_blank" class="social-link mx-2">
+                    <img src="./image/icons/github.png" alt="GitHub Icon" class="w-25 h-auto" />
+                </a>
+            </div>
+        </div>
+    
+        <!-- My Hobbies -->
+        <section class="card border-0 shadow-lg mt-5">
+            <h3 class="card-header bg-primary text-white text-center">My Hobbies</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">💻 Coding</li>
+                <li class="list-group-item">💡 Solving Problems</li>
+                <li class="list-group-item">📚 Reading</li>
+                <li class="list-group-item">🎬 Watching Movies</li>
+                <li class="list-group-item">⚽ Playing Football</li>
+                <li class="list-group-item">🎮 Playing Video Games</li>
+            </ul>
+        </section>
+    </aside>
+    
+
+    <footer class="bg-opacity-50  bg-gradient bg-light   ">
+        <section>
+            <div class="container mt-5">
+                <h3 class="text-center mb-4">Contact Info</h3>
+                <address class="text-center">
+                    <p>Email: <a href="mailto:fuaadmuhe12@gmail.com" class="link-info  link-offset-2-hover  ">fuaadmuhe12@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+251978060846" class="link-offset-2-hover link-info   ">+251978060846</a></p>
+                </address>
+            </div>
+
             <!--get in touch-->
-            <div>
-                <a href="contact.html" class="link-tab">Get in Touch</a>
-            </div>    
+            <div class="text-center ">
+                <a href="contact.html" class="btn btn-primary ">Get in Touch</a>
+            </div>
         </section>
         <!--social link-->
-        <div class="social">
+        <div class="d-flex my-4  justify-content-end text-center     ">
             <a href="https://www.facebook.com/fuaad.muhammad.56" target="_blank">
-                <img src="./image/icons/facebook.png" alt="Facebook Icon - Visit my Facebook profile">
+                <img src="./image/icons/facebook.png" alt="Facebook Icon" class="w-25 h-auto  my-0  " />
             </a>
             <a href="https://www.instagram.com/fuad_muhe_" target="_blank">
-                <img src="./image/icons/instagram.png" alt="Instagram Icon - Visit my Instagram profile">
+                <img src="./image/icons/instagram.png" alt="Instagram Icon" class="w-25 h-auto p-0 " />
             </a>
             <a href="https://www.linkedin.com/in/fuadmuhe/" target="_blank">
-                <img src="./image/icons/linkedin.png" alt="Linkedin Icon - Visit my LinkedIn profile">
+                <img src="./image/icons/linkedin.png" alt="Linkedin Icon" class="w-25 h-auto p-0 " />
             </a>
-            <a href="https://github.com/fuadmuhe12" target="_blank">
-                <img src="./image/icons/github.png" alt="GitHub Icon - Visit my GitHub profile">
+            <a href="https://github.com/fuadmuhe12" target="_blank" class="">
+                <img src="./image/icons/github.png" alt="GitHub Icon" class="w-25 h-auto p-0 " />
             </a>
-
         </div>
         <!--copy right-->
         <div>
-            <p>&copy;  2023 Made by Fuad Mohammed. All rights reserved.</p>
+            <p class="font-monospace  text-center h3">&copy; 2023 Made by Fuad Mohammed. All rights reserved.</p>
         </div>
     </footer>
+    <script src="JS/togler.js"></script>
+    <script src="JS/script.js"></script>
 </body>
+
 </html>
